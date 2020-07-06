@@ -1,0 +1,95 @@
+.contacts {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.contacts .item {
+  @media screen and (min-width: 480px) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-self: center;
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.contacts-link {
+  @extend %inline-flex;
+  color: $primary-text-color;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 480px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.contacts-logo {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.footer-address {
+  line-height: 1.71;
+}
+
+.address {
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 70px;
+  }
+
+  &-kiev {
+    display: inline-block;
+    margin-bottom: 9px;
+    color: $primary-white-color;
+    font-style: normal;
+  }
+}
+
+.footer-contacts {
+  display: inline-block;
+  margin-bottom: 9px;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
